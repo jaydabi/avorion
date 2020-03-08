@@ -7,5 +7,5 @@ RUN chown steam:steam /home/steam/ -R
 USER steam
 RUN chmod u+x /home/steam/run_galaxy.sh && \
 ~/steamcmd/steamcmd.sh -p +login anonymous +force_install_dir /home/steam/gameserver/avorion +app_update 565060 validate +exit
-WORKDIR /home/steam
+WORKDIR /home/steam/gameserver/avorion
 CMD ["bash", "/home/steam/run_galaxy.sh"]
