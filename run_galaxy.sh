@@ -9,6 +9,6 @@ else
 fi
 
 # run_galaxy.sh
-~/server.sh --galaxy-name "${GALAXY_NAME}" --datapath "~/data/avorion/${GALAXY_NAME}" $ADMIN_STEAM_ID
+./server.sh --galaxy-name "${GALAXY_NAME}" --datapath "~/data/avorion/${GALAXY_NAME}" $ADMIN_STEAM_ID
 
 exit 0
